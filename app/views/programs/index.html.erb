@@ -2,7 +2,9 @@
 
 <table>
   <tr>
+    <th>Program</th>
     <th>Name</th>
+    <th>Degree</th>
     <th></th>
     <th></th>
     <th></th>
@@ -10,7 +12,9 @@
 
 <% @programs.each do |program| %>
   <tr>
-    <td><%= program.name %></td>
+    <td><%= program.Program_id %></td>
+    <td><%= program.Name %></td>
+    <td><%= program.Degree %></td>
     <td><%= link_to 'Show', program %></td>
     <td><%= link_to 'Edit', edit_program_path(program) %></td>
     <td><%= link_to 'Destroy', program, confirm: 'Are you sure?', method: :delete %></td>
