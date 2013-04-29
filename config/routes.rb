@@ -2,6 +2,8 @@ EvalOMatic::Application.routes.draw do
 
   resources :programs
   resources :courses
+  resources :users
+
 
   get "home/index"
 
