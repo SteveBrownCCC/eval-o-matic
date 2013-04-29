@@ -444,6 +444,7 @@ Served asset /programs.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-17 20:20:14 -0700
 Served asset /application.js - 304 Not Modified (0ms)
   [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+<<<<<<< HEAD
 Migrating to AddDegreeToProgram (20130419160132)
   [1m[35m (0.0ms)[0m  select sqlite_version(*)
   [1m[36m (593.8ms)[0m  [1mALTER TABLE "programs" ADD "degree" varchar(255)[0m
@@ -522,3 +523,24 @@ Migrating to AddDegreeToPrograms (20130422171535)
   [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
   [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("programs")[0m
+=======
+Migrating to CreatePrograms (20130318030416)
+Migrating to AddDegreeToProgram (20130419150629)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (2281.2ms)[0m  [1mALTER TABLE "programs" ADD "degree" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130419150629')
+  [1m[36m (15.6ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("programs")[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePrograms (20130318030416)
+Migrating to AddDegreeToProgram (20130419150629)
+Migrating to CreateCourses (20130419154647)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (15.6ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "Number" integer, "Name" varchar(255), "UserID" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130419154647')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("programs")
+>>>>>>> 88fa65cd5d166e6afaf3fd0bc0001c86b1a48179
