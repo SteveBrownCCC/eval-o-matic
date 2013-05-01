@@ -1,9 +1,11 @@
 EvalOMatic::Application.routes.draw do
-  resources :requirements
-
-  get "home/index"
 
   resources :programs
+  resources :courses
+  resources :users
+  resources :requirements
+
+  get "home/index"  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

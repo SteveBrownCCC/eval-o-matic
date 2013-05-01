@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  Program_id: 1
+  Number: 1
   Name: MyString
-  Degree: MyString
+  UserID: 1
 
 two:
-  Program_id: 1
+  Number: 1
   Name: MyString
-  Degree: MyString
+  UserID: 1
