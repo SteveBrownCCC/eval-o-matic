@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Requirementsid:</b>
+  <%= @requirement.requirementsID %>
+</p>
+
+<p>
+  <b>Courseid:</b>
+  <%= @requirement.courseID %>
+</p>
+
+<p>
+  <b>Programid:</b>
+  <%= @requirement.programID %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_path(@requirement) %> |
+<%= link_to 'Back', requirements_path %>

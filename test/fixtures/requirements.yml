@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  requirementsID: 1
+  courseID: 1
+  programID: 1
+
+two:
+  requirementsID: 1
+  courseID: 1
+  programID: 1
